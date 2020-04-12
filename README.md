@@ -41,24 +41,38 @@ Passwords MUST
 This CLI accepts one command-line argument that points to a file with a line-delimited list of common passwords. 
 
 ```bash
+$ ./password_validator.py weak_password_list.txt
+
+password1
+manish1
+iheartradio
+^Z
+password1 --> Error: Common Password
+manish1 --> Error: Too Short```
+
+
+```bash
 $ echo "password1" | ./password_validator.py weak_password_list.txt
+
 password1 --> Error: Common Password```
 
 This will open up stdin for you to enter a password. The program will return nothing if the password succeeds (in non-verbose mode!). It will return all errors for a given password if it has any based on the NIST standards. See below:
 
-![Image of example output](assets/OutputExample1.png)
+![Image of example output](assets/OutputExample1.PNG)
+![Image of example output](assets/OutputExample3.PNG)
 
 You may also pipe in a line-delimited file of passwords as an input!
 
 ```
 $ cat input_passwords.txt | ./password_validator.py weak_password_list.txt
+
 password1 --> Error: Common Password
 manish --> Error: Too Short
 ♥O◘♦♥O◘♦ --> Error: Invalid Characters
 
 ```
 
-![Gif of example output](assets/OutputExample2.png)
+![Gif of example output](assets/OutputExample2.PNG)
 
 ```
 # Test Cases
