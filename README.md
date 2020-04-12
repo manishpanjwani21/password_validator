@@ -35,35 +35,33 @@ Passwords MUST
   $ cd password_validator
   ```
 
-3) Install dependencies
-  ```bash
-  $ yarn
-  ```
-
-4) Run program
+3) Run program
 
 ### Input
 This CLI accepts one command-line argument that points to a file with a line-delimited list of common passwords. 
 
 ```bash
-$ node src/index.js common_passwords.txt
-```
+$ echo "password1" | ./password_validator.py weak_password_list.txt
+password1 --> Error: Common Password```
 
 This will open up stdin for you to enter a password. The program will return nothing if the password succeeds (in non-verbose mode!). It will return all errors for a given password if it has any based on the NIST standards. See below:
 
-![Image of example output](assets/output_example_1.png)
+![Image of example output](assets/OutputExample1.png)
 
 You may also pipe in a line-delimited file of passwords as an input!
 
 ```
-$ cat test_input.txt | node src/index.js common_passwords.txt
+$ cat input_passwords.txt | ./password_validator.py weak_password_list.txt
+password1 --> Error: Common Password
+manish --> Error: Too Short
+♥O◘♦♥O◘♦ --> Error: Invalid Characters
+
 ```
 
-![Gif of example output](assets/output_example_2.gif)
+![Gif of example output](assets/OutputExample2.png)
 
 ```
-$ Test Cases
-OR 
+# Test Cases
 $ ./testcase_simple.py
 ```
 
