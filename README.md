@@ -48,10 +48,9 @@ manish1
 iheartradio
 ^Z
 password1 --> Error: Common Password
-manish1 --> Error: Too Short```
+manish1 --> Error: Too Short
 
 
-```bash
 $ echo "password1" | ./password_validator.py weak_password_list.txt
 
 password1 --> Error: Common Password```
@@ -63,7 +62,7 @@ This will open up stdin for you to enter a password. The program will return not
 
 You may also pipe in a line-delimited file of passwords as an input!
 
-```
+```bash
 $ cat input_passwords.txt | ./password_validator.py weak_password_list.txt
 
 password1 --> Error: Common Password
