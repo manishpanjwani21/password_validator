@@ -27,7 +27,7 @@ Passwords MUST
 ### Instructions
 1) Clone repository with:
   ```bash
-    $ git clone git@github.com:manishpanjwani21/password_validator.git
+    $ git clone https://github.com/manishpanjwani21/password_validator.git
   ```
 
 2) Go into the directory

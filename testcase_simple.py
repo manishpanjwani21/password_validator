@@ -13,7 +13,7 @@ class PasswordTestCase(unittest.TestCase):
     
     def test_is_non_ascii_character(self):
         """Is password check for non_ascii_character ?"""
-        self.assertFalse(password_check('♥O◘♦♥O◘♦',self.filedata))
+        self.assertFalse(password_check('hello aåbäcö',self.filedata))
     
     def test_is_short_character(self):
         """Is password check for short_character ?"""
