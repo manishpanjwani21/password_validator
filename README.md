@@ -1,4 +1,4 @@
-# password_validator
+# Password Validator
 
 ## Background
 
