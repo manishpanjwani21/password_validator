@@ -67,7 +67,9 @@ You may also pipe in a line-delimited file of passwords as an input!
 $ cat input_passwords.txt | ./password_validator.py weak_password_list.txt
 
 password1 --> Error: Common Password
+
 manish --> Error: Too Short
+
 ♥O◘♦♥O◘♦ --> Error: Invalid Characters
 
 ```
