@@ -80,6 +80,10 @@ manish --> Error: Too Short
 $ ./testcase_simple.py
 ```
 
+```
+![Gif of example output](assets/OutputExample4.PNG)
+```
+
 ## Author
 Manish Panjwani
 - [Github](https://github.com/manishpanjwani21)
