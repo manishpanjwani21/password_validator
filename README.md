@@ -56,10 +56,10 @@ $ echo "password1" | ./password_validator.py weak_password_list.txt
 password1 --> Error: Common Password```
 
 This will open up stdin for you to enter a password. The program will return nothing if the password succeeds (in non-verbose mode!). It will return all errors for a given password if it has any based on the NIST standards. See below:
-
+```
 ![Gif of example output](assets/OutputExample3.PNG)
 ![Gif of example output](assets/OutputExample2.PNG)
-
+```
 You may also pipe in a line-delimited file of passwords as an input!
 
 ```bash
